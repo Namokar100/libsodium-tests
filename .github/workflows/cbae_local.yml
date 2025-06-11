@@ -1,7 +1,9 @@
 name: CBOM Vulnerability Analysis with CLI
 
-on: [push]
-    workflow_dispatch:
+on:
+  push:
+  workflow_dispatch:
+
 env:
   CODEQL_VERSION: v2.21.2
   CODEQL_DIR: ${{ github.workspace }}/codeql
